@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int a[30],k[30],l[30],i,j,e=0,o=0,n,f;
+    printf("enter");
+    scanf("%d",&n);
+    printf("enter");
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    printf("enter");
+    scanf("%d",&f);
+    printf("enter");
+    for(i=0;i<f;i++)
+    scanf("%d",&k[i]);
+for(i=0;i<f;i++)
+{
+    for(j=0;j<n;j++)
+     {
+         if(k[i]==a[j])
+         {
+             a[j]=0;
+         }
+     }
+
+}
+for(i=0;i<n;i++)
+{
+    if(a[i]!=0)
+    {
+        l[e]=a[i];
+        o=o+1;
+        e++;
+    }
+}
+for(i=o;i<n;i++)
+{
+    l[i]=0;
+}
+for(i=0;i<n;i++)
+    printf("%d",l[i]);
+}

@@ -1,0 +1,81 @@
+#include<stdio.h>
+int main()
+{
+    int s[9],a=191,b,c,i,j,k,m,n,l,o=0,r=0,u;
+    printf("enter");
+    scanf("%d",&l);
+while(1)
+
+    {o=0;
+        a++;
+    b=a*2;
+    c=a*3;
+    i=a;
+    j=b;
+    k=c;
+    for(n=2;n>=0;n--)
+    {
+        if(a>=10)
+        {
+            s[n]=a%10;
+            a=a/10;
+        }
+        else{
+            s[n]=a;
+        }
+    }
+    for(n=5;n>=3;n--)
+    {
+        if(b>=10)
+        {
+            s[n]=b%10;
+            b=b/10;
+        }
+        else{
+            s[n]=b;
+        }
+    }
+    for(n=8;n>=6;n--)
+    {
+        if(c>=10)
+        {
+            s[n]=c%10;
+            c=c/10;
+        }
+        else{
+            s[n]=c;
+        }
+    }
+    a=i;
+
+for(n=0;n<=8;n++)
+{
+    for(m=0;m<=8;m++)
+    {
+        if(n!=m)
+        {
+            if(s[n]==s[m])
+            {
+                o=1;
+                break;
+            }
+        }
+    }
+    if(o==1)
+    {
+        break;
+    }
+}
+if(o==0)
+{
+    printf("%d %d %d",i,j,k);
+    printf("\n");
+    r++;
+}
+if(r==l)
+{
+    break;
+}
+
+}
+}
